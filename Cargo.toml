@@ -1,0 +1,10 @@
+[package]
+name = "gml-function-testing"
+authors = ["BioTomateDE <biotomatede@proton.me>"]
+version = "0.0.0"
+edition = "2024"
+license = "GPL-3.0-only"
+
+[dependencies.libgm]
+git = "https://github.com/BioTomateDE/LibGM"
+rev = "f6edfc2"
