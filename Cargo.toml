@@ -5,6 +5,5 @@ version = "0.0.0"
 edition = "2024"
 license = "GPL-3.0-only"
 
-[dependencies.libgm]
-git = "https://github.com/BioTomateDE/LibGM"
-rev = "f6edfc2"
+[dependencies]
+libgm = "0.7.0"

@@ -118,8 +118,9 @@ checksum = "34b357333733e8260735ba5894eb928c02ecc69c78715f01a8019e7fa7f2db4c"
 
 [[package]]
 name = "libgm"
-version = "0.7.0-beta"
-source = "git+https://github.com/BioTomateDE/LibGM?rev=f6edfc2#f6edfc2d38ff4e39ae97b797d78eec43b37f6208"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7252771fd74f399b517153d521973c5a0abfaee8b281c746a609d928e4a040f5"
 dependencies = [
  "bitflags",
  "bzip2",

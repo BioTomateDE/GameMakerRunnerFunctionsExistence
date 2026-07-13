@@ -8,6 +8,17 @@ The main resources here are in the [`output` directory](output/), which contains
 existing and non-existing functions for Linux and Windows runners of various versions.
 > (Only functions already defined by BuiltinList are checked for. Perhaps there are more functions that do exist. This tools only checks for false-positives, not false-negatives.)
 
+## Versions
+
+| WAD | GM | Undertale | File |
+|-----|----|-----------|------|
+| 14 | 1.0.0.1567 | 1.00 | [existing_functions-wad14-ut1.00.txt]([output/existing_functions-wad14-ut1.00.txt]), [output/nonexisting_functions-wad14-ut1.00.txt]([output/nonexisting_functions-wad14-ut1.00.txt]) |
+
+**WAD** refers to the bytecode/WAD Version field (one byte) in the `GEN8` chunk (General Info).
+**GM** refers to the IDE Version field (16 bytes) in the `GEN8` chunk (General Info). (GMS1 versions are stored weirdly, don't ask me.)
+**Undertale** refers to the Undertale Version (range) that uses this GameMaker version.
+
+## Running yourself
 If you want, you can run this scuffed tool yourself.
 Be aware, this is made for Linux, so you might need to adjust paths in the top of `main.rs` if you're on a different platform.
 Also, this tool patches your Undertale data file, so you will need to copy it back manually.
