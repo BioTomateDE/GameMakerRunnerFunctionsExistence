@@ -1,0 +1,350 @@
+1a2,3
+> @@Other@@
+> @@NewGMLArray@@
+9a12,16
+> matrix_build_lookat
+> matrix_build_identity
+> matrix_build_projection_ortho
+> matrix_build_projection_perspective
+> matrix_build_projection_perspective_fov
+10a18
+> matrix_transform_vertex
+69a78,79
+> d3d_model_load_buffer
+> d3d_model_save_buffer
+300a311,312
+> ds_map_secure_load_buffer
+> ds_map_secure_save_buffer
+429a442
+> load_csv
+477a491
+> collision_shape
+491a506,507
+> instance_create_depth
+> instance_create_layer
+499a516
+> instance_id_get
+502a520,521
+> instance_deactivate_region_special
+> instance_deactivate_layer
+505a525
+> instance_activate_layer
+533a554
+> display_set_ui_visibility
+658a680,681
+> texture_global_scale
+> texture_get_uvs
+684a708,709
+> draw_shape
+> draw_shape_string
+738a764
+> surface_create_special
+827a854,857
+> gpio_set
+> gpio_clear
+> gpio_get
+> gpio_set_mode
+849a880,883
+> array_equals
+> array_create
+> array_copy
+> typeof
+852a887,890
+> variable_instance_exists
+> variable_instance_get
+> variable_instance_set
+> variable_instance_get_names
+859a898
+> randomise
+903a943,944
+> dot_product_normalized
+> dot_product_3d_normalized
+933a975
+> string_hash_to_newline
+965a1008
+> debug_get_callstack
+967a1011
+> debug_event
+1015a1060,1061
+> game_set_speed
+> game_get_speed
+1115a1162,1163
+> sprite_flush
+> sprite_flush_multi
+1136a1185,1186
+> background_flush
+> background_flush_multi
+1237a1288
+> audio_delete
+1246a1298,1299
+> font_set_dynamic_texture_size
+> font_get_dynamic_texture_size
+1317a1371
+> object_set_collisions
+1402a1457,1458
+> os_check_permission
+> os_request_permission
+1633a1690,1692
+> buffer_get_type
+> buffer_get_alignment
+> buffer_exists
+1679d1737
+< network_receive_packet
+1720a1779
+> steam_upload_score_ext
+1721a1781
+> steam_upload_score_buffer_ext
+1766a1827
+> shader_current
+1785a1847
+> vertex_format_add_color
+1786a1849
+> vertex_format_add_texcoord
+1796a1860
+> vertex_color
+1820a1885
+> skeleton_animation_get_frames
+1833a1899
+> draw_skeleton_instance
+1837a1904,1908
+> skeleton_animation_get_frame
+> skeleton_animation_set_frame
+> skeleton_get_minmax
+> skeleton_get_num_bounds
+> skeleton_get_bounds
+1844a1916,1919
+> video_open
+> video_close
+> video_draw
+> video_set_volume
+1852a1928
+> psn_post_leaderboard_score_comment
+1860a1937,1938
+> psn_show_error_dialog
+> psn_check_free_space
+1866a1945,1951
+> psn_get_avatar_url
+> psn_get_tus_data
+> psn_set_tus_data
+> psn_get_tus_variable
+> psn_set_tus_variable
+> psn_delete_tus_data
+> psn_get_entitlement_list
+1871a1957
+> matchmaking_session_set_hidden
+1881a1968,1969
+> matchmaking_session_invite_start
+> matchmaking_send_invites_no_ui
+1888a1977
+> psn_get_trophy_unlock_state
+1924a2014
+> xboxone_read_player_leaderboard
+1937a2028,2029
+> xboxone_generate_player_session_id
+> xboxone_package_check_license
+1943a2036
+> xboxlive_user_is_signing_in
+1946a2040
+> xboxlive_gamertag_for_user
+1973a2068
+> xboxlive_read_player_leaderboard
+1989,1990c2084,2279
+< immersion_play_effect
+< immersion_stop
+---
+> layer_get_id
+> layer_get_id_at_depth
+> layer_get_depth
+> layer_create
+> layer_destroy
+> layer_destroy_instances
+> layer_add_instance
+> layer_has_instance
+> layer_set_visible
+> layer_get_visible
+> layer_exists
+> layer_x
+> layer_y
+> layer_get_x
+> layer_get_y
+> layer_hspeed
+> layer_vspeed
+> layer_get_hspeed
+> layer_get_vspeed
+> layer_sprite_get_id
+> layer_sprite_exists
+> layer_script_begin
+> layer_script_end
+> layer_shader
+> layer_get_script_begin
+> layer_get_script_end
+> layer_get_shader
+> layer_set_target_room
+> layer_get_target_room
+> layer_reset_target_room
+> layer_get_all
+> layer_get_all_elements
+> layer_get_name
+> layer_depth
+> layer_get_element_layer
+> layer_get_element_type
+> layer_element_move
+> layer_force_draw_depth
+> layer_is_draw_depth_forced
+> layer_get_forced_depth
+> layer_background_get_id
+> layer_background_exists
+> layer_background_create
+> layer_background_destroy
+> layer_background_visible
+> layer_background_htiled
+> layer_background_vtiled
+> layer_background_xscale
+> layer_background_yscale
+> layer_background_stretch
+> layer_background_blend
+> layer_background_alpha
+> layer_background_index
+> layer_background_speed
+> layer_background_sprite
+> layer_background_change
+> layer_background_get_visible
+> layer_background_get_sprite
+> layer_background_get_htiled
+> layer_background_get_vtiled
+> layer_background_get_stretch
+> layer_background_get_xscale
+> layer_background_get_yscale
+> layer_background_get_blend
+> layer_background_get_alpha
+> layer_background_get_index
+> layer_background_get_speed
+> layer_sprite_create
+> layer_sprite_destroy
+> layer_sprite_change
+> layer_sprite_index
+> layer_sprite_speed
+> layer_sprite_xscale
+> layer_sprite_yscale
+> layer_sprite_angle
+> layer_sprite_blend
+> layer_sprite_alpha
+> layer_sprite_x
+> layer_sprite_y
+> layer_sprite_get_sprite
+> layer_sprite_get_index
+> layer_sprite_get_speed
+> layer_sprite_get_xscale
+> layer_sprite_get_yscale
+> layer_sprite_get_angle
+> layer_sprite_get_blend
+> layer_sprite_get_alpha
+> layer_sprite_get_x
+> layer_sprite_get_y
+> layer_tilemap_get_id
+> layer_tilemap_exists
+> layer_tilemap_create
+> layer_tilemap_destroy
+> tilemap_tileset
+> tilemap_x
+> tilemap_y
+> tilemap_set
+> tilemap_set_at_pixel
+> tilemap_get_tileset
+> tilemap_get_tile_width
+> tilemap_get_tile_height
+> tilemap_get_width
+> tilemap_get_height
+> tilemap_get_x
+> tilemap_get_y
+> tilemap_get
+> tilemap_get_at_pixel
+> tilemap_get_cell_x_at_pixel
+> tilemap_get_cell_y_at_pixel
+> tilemap_clear
+> draw_tilemap
+> draw_tile
+> tilemap_set_global_mask
+> tilemap_get_global_mask
+> tilemap_set_mask
+> tilemap_get_mask
+> tilemap_get_frame
+> tile_set_empty
+> tile_set_index
+> tile_set_flip
+> tile_set_mirror
+> tile_set_rotate
+> tile_get_empty
+> tile_get_index
+> tile_get_flip
+> tile_get_mirror
+> tile_get_rotate
+> layer_tile_exists
+> layer_tile_create
+> layer_tile_destroy
+> layer_tile_change
+> layer_tile_xscale
+> layer_tile_yscale
+> layer_tile_blend
+> layer_tile_alpha
+> layer_tile_x
+> layer_tile_y
+> layer_tile_region
+> layer_tile_visible
+> layer_tile_get_sprite
+> layer_tile_get_xscale
+> layer_tile_get_yscale
+> layer_tile_get_blend
+> layer_tile_get_alpha
+> layer_tile_get_x
+> layer_tile_get_y
+> layer_tile_get_region
+> layer_tile_get_visible
+> layer_instance_get_instance
+> camera_create
+> camera_create_view
+> camera_destroy
+> camera_apply
+> camera_get_active
+> camera_get_default
+> camera_set_default
+> camera_set_view_mat
+> camera_set_proj_mat
+> camera_set_update_script
+> camera_set_begin_script
+> camera_set_end_script
+> camera_set_view_pos
+> camera_set_view_size
+> camera_set_view_speed
+> camera_set_view_border
+> camera_set_view_angle
+> camera_set_view_target
+> camera_get_view_mat
+> camera_get_proj_mat
+> camera_get_update_script
+> camera_get_begin_script
+> camera_get_end_script
+> camera_get_view_x
+> camera_get_view_y
+> camera_get_view_width
+> camera_get_view_height
+> camera_get_view_speed_x
+> camera_get_view_speed_y
+> camera_get_view_border_x
+> camera_get_view_border_y
+> camera_get_view_angle
+> camera_get_view_target
+> view_get_camera
+> view_get_visible
+> view_get_xport
+> view_get_yport
+> view_get_wport
+> view_get_hport
+> view_get_surface_id
+> view_set_camera
+> view_set_visible
+> view_set_xport
+> view_set_yport
+> view_set_wport
+> view_set_hport
+> view_set_surface_id
