@@ -58,30 +58,23 @@ fn run() -> Result<()> {
         // ERROR!!! :: Error on load
         // Unable to find function @@Other@@
         let out = String::from_utf8_lossy(&output.stdout);
-        let mut lines = out.lines().map(str::trim).filter(|s| !s.is_empty());
-        let last = lines.next_back().unwrap_or("");
-        let secondlast = lines.next_back().unwrap_or("");
-
-        if !secondlast.starts_with("ERROR!!!") {
-            println!("{out:?}");
-            println!("\nLast lines:\n{secondlast:?}\n{last:?}");
-            bail!("Unrecognized runner output, no 'ERROR!!!' at the end");
-        }
-
-        let Some(badfunc) = last.strip_prefix("Unable to find function ") else {
+        let needle = "Unable to find function ";
+        let Some(idx) = out.find(needle) else {
             println!("{out}");
-            println!("\nLast lines:\n{secondlast:?}\n{last:?}");
-            bail!("Last runner stdout line does seem to be a 'Unable to find function' error");
+            bail!("Unrecognized runner output, can't find a 'Unable to find function' error");
         };
 
-        println!("Function {badfunc:?} does not exist apparently");
+        let out: &str = &out[idx + needle.len()..];
+        let end: usize = out.find('\n').unwrap_or(out.len());
+        let bad_function: &str = out[..end].trim();
+        println!("Function {bad_function:?} does not exist apparently");
 
-        let badidx = funcs
+        let function_index = funcs
             .iter()
-            .position(|&f| f == badfunc)
+            .position(|&f| f == bad_function)
             .ok_or("could not find function in my list")?;
-        non_existing_funcs.push(funcs[badidx]);
-        funcs.remove(badidx);
+        non_existing_funcs.push(funcs[function_index]);
+        funcs.remove(function_index);
 
         // WARN: file is only accurate when this thing is finished (when game successfully launches)
         std::fs::write("existing_funcs.txt", funcs.join("\n"))

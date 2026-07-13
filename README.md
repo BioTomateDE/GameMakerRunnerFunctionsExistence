@@ -5,21 +5,24 @@ from [UndertaleModTool](https://github.com/UnderminersTeam/UndertaleModTool)
 which currently incorrectly assumes certain builtin GameMaker functions exist for old GMS1 versions.
 
 The main resources here are in the [`output` directory](output/), which contains lists of
-existing and non-existing functions for Linux and Windows runners of various versions.
+existing and missing functions for Linux and Windows runners of various versions.
 > (Only functions already defined by BuiltinList are checked for. Perhaps there are more functions that do exist. This tools only checks for false-positives, not false-negatives.)
 
 ## Versions
 
-| WAD | GM | Undertale | Existing Functions File | Non-Existing Functions File |
+| WAD | GM | Undertale | Existing Functions File | Missing Functions File |
 |-----|----|-----------|-------------------------|-----------------------------|
-| 14 | 1.0.0.1567 | 1.00 | [existing_functions-wad14-ut1.00.txt](output/existing_functions-wad14-ut1.00.txt) | [output/nonexisting_functions-wad14-ut1.00.txt](output/nonexisting_functions-wad14-ut1.00.txt) |
-| 15 | 1.0.0.1690 | 1.001 | [existing_functions-wad15-ut1.001.txt](output/existing_functions-wad15-ut1.001.txt) | [output/nonexisting_functions-wad15-ut1.001.txt](output/nonexisting_functions-wad15-ut1.001.txt) |
-| 16 | 1.0.0.1539 | 1.06 - 1.08 | [existing_functions-wad16-ut1.06_ut1.08.txt](output/existing_functions-wad16-ut1.06_ut1.08.txt) | [output/nonexisting_functions-wad16-ut1.06_ut1.08.txt](output/nonexisting_functions-wad16-ut1.06_ut1.08.txt) |
-| 16 | 2.0.6 | 1.09 - 1.11 | [existing_functions-wad16-ut1.06_ut1.08.txt](output/existing_functions-wad16-ut1.06_ut1.08.txt) | [nonexisting_functions-wad16-ut1.06_ut1.08.txt](output/nonexisting_functions-wad16-ut1.06_ut1.08.txt)
+| 14 | 1.4.1567 | UT 1.00 | [functions-wad14-gm1.4.1567.txt](output/functions-wad14-gm1.4.1567.txt) | [output/missingfunctions-wad14-gm1.4.1567.txt](output/missingfunctions-wad14-gm1.4.1567) |
+| 15 | 1.4.1690 | UT 1.001 | [functions-wad15-gm1.4.1690.txt](output/functions-wad15-gm1.4.1690.txt) | [output/missingfunctions-wad15-gm1.4.1690.txt](output/missingfunctions-wad15-gm1.4.1690.txt) |
+| 16 | 1.4.1539 | UT 1.06 - 1.08 | [functions-wad16-gm1.4.1539.txt](output/functions-wad16-gm1.4.1539.txt) | [output/missingfunctions-wad16-gm1.4.1539.txt](output/missingfunctions-wad16-gm1.4.1539.txt) |
+| 16 | 2.0.6 | UT 1.09 - 1.11 | [functions-wad16-gm2.0.6.txt](output/functions-wad16-gm2.0.6.txt) | [missingfunctions-wad16-gm2.0.6.txt](output/missingfunctions-wad16-gm2.0.6.txt)
+| 17 | 2.3.2 | DR Demo 1.00 - 1.07 | stub | stub |
+| 17 | 2022.1 | DR Demo 1.08 - 1.10 | [functions-wad17-gm2022.1.txt](output/functions-wad17-gm2022.1.txt) | [missingfunctions-wad17-gm2022.1.txt](output/missingfunctions-wad17-gm2022.1.txt) |
 
 - **WAD** refers to the bytecode/WAD Version field (one byte) in the `GEN8` chunk of the data file (General Info).
-- **GM** refers to the IDE Version field (16 bytes) in the `GEN8` chunk. (GMS1 versions are stored weirdly, don't ask me.)
-- **Undertale** refers to the Undertale Version (range) that uses this GameMaker version.
+- **GM** refers to the IDE Version field (16 bytes) in the `GEN8` chunk. GMS1 versions are stored as `1.0.0.MINOR`, so `1.4.1567` becomes `1.0.0.1567` in GEN8.
+- **Game** refers to the Undertale or Deltarune Version (range) that uses this GameMaker version.
+The ranges are inclusive on both sides.
 
 ## Running yourself
 If you want, you can run this scuffed tool yourself.
