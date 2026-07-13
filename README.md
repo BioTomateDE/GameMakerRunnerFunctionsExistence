@@ -12,7 +12,7 @@ existing and non-existing functions for Linux and Windows runners of various ver
 
 | WAD | GM | Undertale | Existing Functions File | Non-Existing Functions File |
 |-----|----|-----------|-------------------------|-----------------------------|
-| 14 | 1.0.0.1567 | 1.00 | [existing_functions-wad14-ut1.00.txt](output/existing_functions-wad14-ut1.00.txt]) | [output/nonexisting_functions-wad14-ut1.00.txt](output/nonexisting_functions-wad14-ut1.00.txt]) |
+| 14 | 1.0.0.1567 | 1.00 | [existing_functions-wad14-ut1.00.txt](output/existing_functions-wad14-ut1.00.txt) | [output/nonexisting_functions-wad14-ut1.00.txt](output/nonexisting_functions-wad14-ut1.00.txt) |
 
 - **WAD** refers to the bytecode/WAD Version field (one byte) in the `GEN8` chunk of the data file (General Info).
 - **GM** refers to the IDE Version field (16 bytes) in the `GEN8` chunk. (GMS1 versions are stored weirdly, don't ask me.)
