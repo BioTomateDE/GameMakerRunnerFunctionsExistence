@@ -10,7 +10,7 @@ existing and missing functions for Linux and Windows runners of various versions
 
 ## Versions
 
-| WAD | GM | Undertale | Existing Functions File | Missing Functions File |
+| WAD | GM | Game | Existing Functions File | Missing Functions File |
 |-----|----|-----------|-------------------------|-----------------------------|
 | 14 | 1.4.1567 | UT 1.00 | [functions-wad14-gm1.4.1567.txt](output/functions-wad14-gm1.4.1567.txt) | [output/missingfunctions-wad14-gm1.4.1567.txt](output/missingfunctions-wad14-gm1.4.1567) |
 | 15 | 1.4.1690 | UT 1.001 | [functions-wad15-gm1.4.1690.txt](output/functions-wad15-gm1.4.1690.txt) | [output/missingfunctions-wad15-gm1.4.1690.txt](output/missingfunctions-wad15-gm1.4.1690.txt) |
