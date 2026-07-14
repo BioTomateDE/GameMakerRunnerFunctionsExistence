@@ -118,9 +118,9 @@ checksum = "34b357333733e8260735ba5894eb928c02ecc69c78715f01a8019e7fa7f2db4c"
 
 [[package]]
 name = "libgm"
-version = "0.7.0"
+version = "0.7.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7252771fd74f399b517153d521973c5a0abfaee8b281c746a609d928e4a040f5"
+checksum = "cc5de1534f0d71b8734d3aa4131b3e3ce825d045ad9b4cf8e52b8bc2457d3386"
 dependencies = [
  "bitflags",
  "bzip2",

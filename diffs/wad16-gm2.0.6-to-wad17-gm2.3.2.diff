@@ -5,7 +5,7 @@
 > @@NewGMLObject@@
 3a8
 > @@CopyStatic@@
-25,160c30
+25,160d29
 < action_path_old
 < action_set_sprite
 < action_draw_font
@@ -142,9 +142,7 @@
 < action_fullscreen
 < action_snapshot
 < action_effect
----
-> d3d_set_fog
-312,322d181
+312,322d180
 < file_open_read
 < file_open_write
 < file_open_append
@@ -156,25 +154,26 @@
 < file_write_string
 < file_write_real
 < file_writeln
-369d227
+369d226
 < move_contact
-374d231
+374d230
 < move_bounce
-415d271
+415d270
 < collision_shape
-437d292
+436d290
 < instance_sprite
-446d300
+445d298
 < instance_deactivate_region_special
-476,478d329
+475,477d327
 < display_get_windows_vertex_buffer_method
 < display_get_windows_alternate_sync
 < display_set_windows_vertex_buffer_method
-526d376
+525d374
 < make_color
-536d385
+535d383
 < make_colour
-546,552d394
+544,551d391
+< draw_set_blend_mode
 < draw_set_blend_mode_ext
 < draw_set_color_write_enable
 < draw_set_colour_write_enable
@@ -182,17 +181,17 @@
 < draw_set_alpha_test_ref_value
 < draw_get_alpha_test
 < draw_get_alpha_test_ref_value
-597,598d438
+596,602d435
 < background_get_uvs
 < background_get_texture
-600,603d439
+< texture_set_interpolation
 < texture_set_interpolation_ext
 < texture_set_blending
 < texture_set_repeat
 < texture_set_repeat_ext
-607d442
+606d438
 < texture_exists
-611a447,454
+610a443,450
 > texture_prefetch
 > texture_flush
 > texture_debug_messages
@@ -201,16 +200,19 @@
 > texturegroup_get_sprites
 > texturegroup_get_fonts
 > texturegroup_get_tilesets
-638,639d480
+637,638d476
 < draw_shape
 < draw_shape_string
-651,652d491
+647,690d484
+< draw_background
+< draw_background_ext
+< draw_background_stretched
 < draw_background_stretched_ext
 < draw_background_part
-654,655d492
+< draw_background_part_ext
 < draw_background_general
 < draw_background_tiled
-657,676d493
+< draw_background_tiled_ext
 < tile_get_x
 < tile_get_y
 < tile_get_left
@@ -231,46 +233,37 @@
 < tile_set_depth
 < tile_set_scale
 < tile_set_blend
-678,681d494
+< tile_set_alpha
 < tile_add
 < tile_get_count
 < tile_get_id
 < tile_get_ids
-683,687d495
+< tile_get_ids_at_depth
 < tile_exists
 < tile_delete
 < tile_layer_hide
 < tile_layer_show
 < tile_layer_delete
-689,691d496
+< tile_layer_shift
 < tile_layer_find
 < tile_layer_delete_at
 < tile_layer_depth
-694d498
+693d486
 < surface_create_special
-747d550
+746d538
 < get_color
-772,779d574
-< joystick_exists
-< joystick_direction
-< joystick_buttons
-< joystick_has_pov
-< joystick_check_button
-< joystick_xpos
-< joystick_ypos
-< joystick_pov
-784,787d578
+775,778d566
 < gpio_set
 < gpio_clear
 < gpio_get
 < gpio_set_mode
-820a612,616
+811a600,604
 > is_numeric
 > is_nan
 > is_infinity
 > is_struct
 > is_method
-834a631,642
+825a619,630
 > array_length
 > array_resize
 > array_push
@@ -283,7 +276,7 @@
 > method_get_index
 > instanceof
 > exception_unhandled_handler
-842a651,659
+833a639,647
 > variable_instance_names_count
 > variable_struct_exists
 > variable_struct_get
@@ -293,16 +286,16 @@
 > variable_struct_remove
 > json_stringify
 > json_parse
-851d667
+842d655
 < random_use_old_version
-884,885d699
+875,876d687
 < min3
 < max3
-928a743,745
+919a731,733
 > string_pos_ext
 > string_last_pos
 > string_last_pos_ext
-941,958d757
+932,949d745
 < external_define0
 < external_call0
 < external_define1
@@ -321,25 +314,26 @@
 < external_call7
 < external_define8
 < external_call8
-1036d834
+1027d822
 < part_type_color
-1043d840
+1034d828
 < part_type_colour
-1047d843
+1038d831
 < part_type_alpha
-1085,1087d880
+1076,1078d868
 < sprite_get_transparent
 < sprite_get_smooth
 < sprite_get_preload
-1095d887
+1086d875
 < sprite_get_precise
-1101d892
+1092d880
 < sprite_set_precise
-1123,1125d913
+1114,1144d901
 < background_name
 < background_exists
 < background_get_name
-1128,1153d915
+< background_get_width
+< background_get_height
 < background_get_transparent
 < background_get_smooth
 < background_get_preload
@@ -366,23 +360,23 @@
 < sound_discard
 < sound_restore
 < sound_delete
-1247d1008
+1238d994
 < audio_delete
-1257,1258d1017
+1248,1249d1003
 < font_set_dynamic_texture_size
 < font_get_dynamic_texture_size
-1274d1032
+1265d1018
 < path_get_time
-1331,1332d1088
+1321,1322d1073
 < object_set_collisions
 < room_name
-1340d1095
+1330d1080
 < room_set_background
-1351,1353d1105
+1341,1343d1090
 < room_tile_add
 < room_tile_add_ext
 < room_tile_clear
-1356,1363d1107
+1346,1353d1092
 < sound_play
 < sound_loop
 < sound_stop
@@ -391,13 +385,13 @@
 < sound_volume
 < sound_fade
 < sound_global_volume
-1428d1171
+1417d1155
 < gpu_set_alphatestfunc
-1466d1208
+1455d1192
 < gpu_get_alphatestfunc
-1527d1268
+1516d1252
 < iap_is_purchased
-1532,1551d1272
+1521,1540d1256
 < iap_store_status
 < iap_product_status
 < iap_is_downloaded
@@ -418,27 +412,27 @@
 < facebook_check_permission
 < facebook_request_read_permissions
 < facebook_request_publish_permissions
-1570d1290
+1559d1274
 < YoYo_OSPauseEvent
-1808d1527
+1797d1511
 < steam_publish_workshop_file
-1960,1962d1678
+1949,1951d1662
 < yyg_player_run
 < yyg_player_restarted
 < yyg_player_launch_args
-1966a1683
+1955a1667
 > ps4_gamepad_reset_colour
-1989c1706
+1978c1690
 < psn_check_free_space
 ---
 > psn_init_leaderboard
-2025,2026d1741
+2014,2015d1725
 < psn_net_check
 < psn_setup_trophies
-2385a2101,2102
+2374a2085,2086
 > switch_controller_support_set_identification_colour
 > switch_controller_support_set_identification_color
-2449a2167,2179
+2438a2151,2163
 > scheduler_resolution_set
 > scheduler_resolution_get
 > gif_open
@@ -452,7 +446,7 @@
 > font_cache_glyph
 > surface_get_target
 > surface_get_target_ext
-2452c2182,2310
+2441c2166,2294
 < window_get_showborder
 \ No newline at end of file
 ---

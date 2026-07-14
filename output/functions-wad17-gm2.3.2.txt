@@ -27,7 +27,6 @@ matrix_stack_set
 matrix_stack_clear
 matrix_stack_top
 matrix_stack_is_empty
-d3d_set_fog
 ds_set_precision
 ds_exists
 ds_stack_create
@@ -284,7 +283,6 @@ instance_nearest
 instance_furthest
 instance_place
 instance_place_list
-instance_create
 instance_create_depth
 instance_create_layer
 instance_copy
@@ -391,7 +389,6 @@ colour_get_blue
 colour_get_hue
 colour_get_saturation
 colour_get_value
-draw_set_blend_mode
 draw_clear
 draw_clear_alpha
 draw_point
@@ -436,7 +433,6 @@ draw_vertex_texture
 draw_vertex_texture_color
 draw_vertex_texture_colour
 sprite_get_uvs
-texture_set_interpolation
 font_get_uvs
 sprite_get_texture
 font_get_texture
@@ -486,14 +482,6 @@ draw_sprite_part_ext
 draw_sprite_general
 draw_sprite_tiled
 draw_sprite_tiled_ext
-draw_background
-draw_background_ext
-draw_background_stretched
-draw_background_part_ext
-draw_background_tiled_ext
-tile_set_alpha
-tile_get_ids_at_depth
-tile_layer_shift
 surface_create
 surface_create_ext
 surface_resize
@@ -911,8 +899,6 @@ sprite_flush_multi
 sprite_set_speed
 sprite_get_speed_type
 sprite_get_speed
-background_get_width
-background_get_height
 audio_listener_position
 audio_listener_velocity
 audio_listener_orientation
@@ -1075,7 +1061,6 @@ object_get_name
 object_get_sprite
 object_get_solid
 object_get_visible
-object_get_depth
 object_get_persistent
 object_get_mask
 object_get_parent
@@ -1153,7 +1138,6 @@ shop_leave_rating
 analytics_event
 analytics_event_ext
 ads_set_reward_callback
-draw_enable_alphablend
 draw_texture_flush
 draw_flush
 gpu_set_blendenable

@@ -1,14 +1,14 @@
-875d874
+863d862
 < sprite_name
-1009d1007
+995d993
 < font_name
-1029d1026
+1015d1012
 < path_name
-1062d1058
+1048d1044
 < timeline_name
-1072d1067
+1058d1053
 < object_name
-1139,1151d1133
+1124,1136d1118
 < ads_setup
 < ads_engagement_launch
 < ads_engagement_available
@@ -22,11 +22,11 @@
 < ads_disable
 < ads_event
 < ads_event_preload
-1155d1136
+1140d1121
 < ads_set_reward_callback
-2168a2150
+2152a2134
 > event_perform_async
-2301a2284,2297
+2285a2268,2281
 > fx_create
 > fx_get_name
 > fx_get_parameter_names

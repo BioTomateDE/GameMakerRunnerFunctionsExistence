@@ -105,30 +105,39 @@
 > collision_line_list
 501a426
 > instance_position_list
-504a430
+505c430
+< instance_create
+---
 > instance_place_list
-554a481,484
+554a480,483
 > display_set_timing_method
 > display_get_timing_method
 > display_set_sleep_margin
 > display_get_sleep_margin
-773a704,705
+773a703,704
 > surface_depth_disable
 > surface_get_depth_disable
-835a768,771
-> keyboard_virtual_show
-> keyboard_virtual_hide
-> keyboard_virtual_status
-> keyboard_virtual_height
-838,839d773
+836,849c767,770
+< joystick_exists
+< joystick_direction
 < joystick_name
 < joystick_axes
-845,848d778
+< joystick_buttons
+< joystick_has_pov
+< joystick_check_button
+< joystick_xpos
+< joystick_ypos
 < joystick_zpos
 < joystick_rpos
 < joystick_upos
 < joystick_vpos
-857a788,809
+< joystick_pov
+---
+> keyboard_virtual_show
+> keyboard_virtual_hide
+> keyboard_virtual_status
+> keyboard_virtual_height
+857a779,800
 > gesture_drag_time
 > gesture_drag_distance
 > gesture_flick_speed
@@ -151,30 +160,33 @@
 > gesture_get_rotate_time
 > gesture_get_rotate_angle
 > gesture_get_tap_count
-948a901
+948a892
 > bool
-1106a1060,1062
+1106a1051,1053
 > part_system_create_layer
 > part_system_get_layer
 > part_system_layer
-1163a1120,1122
+1163a1111,1113
 > sprite_set_speed
 > sprite_get_speed_type
 > sprite_get_speed
-1299a1259,1260
+1299a1250,1251
 > font_add_enable_aa
 > font_add_get_enable_aa
-1359d1319
+1359,1360d1310
 < object_set_depth
-1381c1341,1342
+< object_get_depth
+1381c1331,1332
 < room_set_view
 ---
 > room_set_viewport
 > room_get_viewport
-1392a1354,1355
+1392a1344,1345
 > room_get_camera
 > room_set_camera
-1451a1415,1498
+1449d1401
+< draw_enable_alphablend
+1451a1404,1487
 > gpu_set_blendenable
 > gpu_set_ztestenable
 > gpu_set_zfunc
@@ -259,14 +271,14 @@
 > draw_light_get_ambient
 > draw_light_get
 > draw_get_lighting
-1462a1510
+1462a1499
 > display_set_gui_maximize
-1725a1774,1775
+1725a1763,1764
 > buffer_compress
 > buffer_decompress
-1825a1876
+1825a1865
 > shader_get_name
-2012a2064,2075
+2012a2053,2064
 > xboxone_stats_set_stat_real
 > xboxone_stats_set_stat_int
 > xboxone_stats_set_stat_string
@@ -279,10 +291,10 @@
 > xboxone_stats_get_leaderboard
 > xboxone_stats_get_social_leaderboard
 > xboxone_achievements_set_progress
-2023a2087,2088
+2023a2076,2077
 > xboxone_matchmaking_join_session
 > xboxone_matchmaking_set_find_timeout
-2066a2132,2143
+2066a2121,2132
 > xboxlive_stats_set_stat_real
 > xboxlive_stats_set_stat_int
 > xboxlive_stats_set_stat_string
@@ -295,13 +307,13 @@
 > xboxlive_stats_get_leaderboard
 > xboxlive_stats_get_social_leaderboard
 > xboxlive_achievements_set_progress
-2077a2155,2156
+2077a2144,2145
 > xboxlive_matchmaking_join_session
 > xboxlive_matchmaking_set_find_timeout
-2186a2266,2267
+2186a2255,2256
 > tilemap_set_width
 > tilemap_set_height
-2279a2361,2449
+2279a2350,2438
 > switch_accounts_get_accounts
 > switch_accounts_get_nickname
 > switch_accounts_open_user

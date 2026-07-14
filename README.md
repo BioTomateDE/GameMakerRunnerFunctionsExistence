@@ -16,7 +16,7 @@ existing and missing functions for Linux and Windows runners of various versions
 | 15 | 1.4.1690 | UT 1.001 | [functions-wad15-gm1.4.1690.txt](output/functions-wad15-gm1.4.1690.txt) | [output/missingfunctions-wad15-gm1.4.1690.txt](output/missingfunctions-wad15-gm1.4.1690.txt) |
 | 16 | 1.4.1539 | UT 1.06 - 1.08 | [functions-wad16-gm1.4.1539.txt](output/functions-wad16-gm1.4.1539.txt) | [missingfunctions-wad16-gm1.4.1539.txt](output/missingfunctions-wad16-gm1.4.1539.txt) |
 | 16 | 2.0.6 | UT 1.09 - 1.11 | [functions-wad16-gm2.0.6.txt](functions-wad16-gm2.0.6.txt) | [missingfunctions-wad16-gm2.0.6.txt](output/missingfunctions-wad16-gm2.0.6.txt)
-| 17 | 2.3.2 | DR Demo 1.00 - 1.07 | [functions-wad17-gm2.3.2.txt](output/functions-wad17-2.3.2.txt) | [missingfunctions-wad17-2.3.2.txt](output/missingfunctions-wad17-gm2.3.2.txt) |
+| 17 | 2.3.2 | DR Demo 1.00 - 1.07 | [functions-wad17-gm2.3.2.txt](output/functions-wad17-gm2.3.2.txt) | [missingfunctions-wad17-gm2.3.2.txt](output/missingfunctions-wad17-gm2.3.2.txt) |
 | 17 | 2022.1 | DR Demo 1.08 - 1.10 | [functions-wad17-gm2022.1.txt](output/functions-wad17-gm2022.1.txt) | [missingfunctions-wad17-gm2022.1.txt](output/missingfunctions-wad17-gm2022.1.txt) |
 
 - **WAD** refers to the bytecode/WAD Version field (one byte) in the `GEN8` chunk of the data file (General Info).

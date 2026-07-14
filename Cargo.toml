@@ -6,4 +6,4 @@ edition = "2024"
 license = "GPL-3.0-only"
 
 [dependencies]
-libgm = "0.7.0"
+libgm = "0.7.1"

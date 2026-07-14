@@ -6,6 +6,7 @@ d3d_set_perspective
 d3d_set_hidden
 d3d_set_depth
 d3d_set_shading
+d3d_set_fog
 d3d_set_culling
 d3d_set_zwriteenable
 d3d_set_projection
@@ -237,6 +238,7 @@ file_writeln
 move_contact
 move_bounce
 collision_shape
+instance_create
 instance_sprite
 instance_deactivate_region_special
 display_get_windows_vertex_buffer_method
@@ -244,6 +246,7 @@ display_get_windows_alternate_sync
 display_set_windows_vertex_buffer_method
 make_color
 make_colour
+draw_set_blend_mode
 draw_set_blend_mode_ext
 draw_set_color_write_enable
 draw_set_colour_write_enable
@@ -253,6 +256,7 @@ draw_get_alpha_test
 draw_get_alpha_test_ref_value
 background_get_uvs
 background_get_texture
+texture_set_interpolation
 texture_set_interpolation_ext
 texture_set_blending
 texture_set_repeat
@@ -260,10 +264,15 @@ texture_set_repeat_ext
 texture_exists
 draw_shape
 draw_shape_string
+draw_background
+draw_background_ext
+draw_background_stretched
 draw_background_stretched_ext
 draw_background_part
+draw_background_part_ext
 draw_background_general
 draw_background_tiled
+draw_background_tiled_ext
 tile_get_x
 tile_get_y
 tile_get_left
@@ -284,10 +293,12 @@ tile_set_position
 tile_set_depth
 tile_set_scale
 tile_set_blend
+tile_set_alpha
 tile_add
 tile_get_count
 tile_get_id
 tile_get_ids
+tile_get_ids_at_depth
 tile_find
 tile_exists
 tile_delete
@@ -295,6 +306,7 @@ tile_delete_at
 tile_layer_hide
 tile_layer_show
 tile_layer_delete
+tile_layer_shift
 tile_layer_find
 tile_layer_delete_at
 tile_layer_depth
@@ -398,6 +410,8 @@ sprite_replace_alpha
 background_name
 background_exists
 background_get_name
+background_get_width
+background_get_height
 background_get_transparent
 background_get_smooth
 background_get_preload
@@ -431,6 +445,7 @@ font_set_dynamic_texture_size
 font_get_dynamic_texture_size
 path_get_time
 object_set_depth
+object_get_depth
 object_set_collisions
 room_name
 room_set_background
@@ -446,6 +461,7 @@ sound_isplaying
 sound_volume
 sound_fade
 sound_global_volume
+draw_enable_alphablend
 gpu_set_alphatestfunc
 gpu_get_alphatestfunc
 iap_is_purchased

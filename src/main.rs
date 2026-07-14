@@ -1,21 +1,18 @@
 // See https://discord.com/channels/566861759210586112/568950566122946580/1526322325333737724
 //
 // BuiltinList.cs was pulled from https://github.com/UnderminersTeam/UndertaleModTool/blob/stable-0.9/UndertaleModLib/Compiler/BuiltinList.cs
-use libgm::{error::*, wad::GMData};
+use libgm::{
+    error::*,
+    wad::{GMData, GMVersion, version::LtsBranch},
+};
 
-// The original Undertale data file.
-// You should create (copy) this file manually before running the tool.
-const ORIGINAL_DATA_PATH: &str = concat!(
-    env!("XDG_DATA_HOME"),
-    "/Steam/steamapps/common/Undertale/assets/game.unx1"
-);
 const DATA_PATH: &str = concat!(
     env!("XDG_DATA_HOME"),
-    "/Steam/steamapps/common/Undertale/assets/game.unx"
+    "/Steam/steamapps/common/DELTARUNEdemo/assets/game.unx"
 );
 const RUNNER_PATH: &str = concat!(
     env!("XDG_DATA_HOME"),
-    "/Steam/steamapps/common/Undertale/runner"
+    "/Steam/steamapps/common/DELTARUNEdemo/runner"
 );
 
 fn main() {
@@ -27,7 +24,9 @@ fn main() {
 
 fn run() -> Result<()> {
     println!("Reading data file");
-    let data: GMData = libgm::wad::parse_file(ORIGINAL_DATA_PATH)?;
+    let mut data = GMData::default();
+    data.general_info.version = GMVersion::new(2022, 1, 2, 0, LtsBranch::Pre2022);
+    data.general_info.wad_version = 17;
     println!("Wow parsing was successful");
 
     let mut funcs: Vec<&str> = extract_builtinlist().ctx("extracting builtinlist")?;
@@ -44,20 +43,12 @@ fn run() -> Result<()> {
         println!("Writing modified data file with {} functions", funcs.len());
         libgm::wad::build_file(&data, DATA_PATH)?;
 
-        println!("Executing runner");
-        // this stdbuf thing fixes output cutoff for piping. dont ask me.
-        let output = std::process::Command::new("stdbuf")
-            .arg("-o0")
-            .arg(RUNNER_PATH)
-            .output()
-            .ctx_any("executing runner")?;
-        println!("Runner finished (crashed probably)");
+        let out = execute_runner()?;
 
         // Sample stdout end:
         // Process Chunk: FUNC   126344
         // ERROR!!! :: Error on load
         // Unable to find function @@Other@@
-        let out = String::from_utf8_lossy(&output.stdout);
         let needle = "Unable to find function ";
         let Some(idx) = out.find(needle) else {
             println!("{out}");
@@ -86,6 +77,28 @@ fn run() -> Result<()> {
         // if successful, the runner will keep running forever.
         // then just terminate it and copy back the original data file.
     }
+}
+
+fn execute_runner() -> Result<String> {
+    println!("Executing runner...");
+    for _ in 0..3 {
+        // this stdbuf thing fixes output cutoff for piping. dont ask me.
+        let output = std::process::Command::new("stdbuf")
+            .arg("-o0")
+            .arg(RUNNER_PATH)
+            .output()
+            .ctx_any("executing runner")?;
+
+        let out = String::from_utf8_lossy(&output.stdout);
+        if out.contains("Unable to find game") {
+            eprintln!("{out}");
+            println!("RUNNER IS STUPID!!! Retrying shortly after.");
+            std::thread::sleep(std::time::Duration::from_millis(420));
+        } else {
+            return Ok(out.to_string());
+        }
+    }
+    Err(err!("Runner really can't find the data file :("))
 }
 
 fn extract_builtinlist() -> Result<Vec<&'static str>> {

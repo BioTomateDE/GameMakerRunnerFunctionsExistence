@@ -428,7 +428,6 @@ instance_nearest
 instance_furthest
 instance_place
 instance_place_list
-instance_create
 instance_create_depth
 instance_create_layer
 instance_copy
@@ -769,14 +768,6 @@ keyboard_virtual_show
 keyboard_virtual_hide
 keyboard_virtual_status
 keyboard_virtual_height
-joystick_exists
-joystick_direction
-joystick_buttons
-joystick_has_pov
-joystick_check_button
-joystick_xpos
-joystick_ypos
-joystick_pov
 keyboard_clear
 mouse_clear
 io_clear
@@ -1317,7 +1308,6 @@ object_get_name
 object_get_sprite
 object_get_solid
 object_get_visible
-object_get_depth
 object_get_persistent
 object_get_mask
 object_get_parent
@@ -1409,7 +1399,6 @@ shop_leave_rating
 analytics_event
 analytics_event_ext
 ads_set_reward_callback
-draw_enable_alphablend
 draw_texture_flush
 draw_flush
 gpu_set_blendenable
