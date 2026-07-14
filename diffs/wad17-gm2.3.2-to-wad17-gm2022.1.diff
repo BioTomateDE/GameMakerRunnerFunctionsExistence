@@ -1,0 +1,43 @@
+875d874
+< sprite_name
+1009d1007
+< font_name
+1029d1026
+< path_name
+1062d1058
+< timeline_name
+1072d1067
+< object_name
+1139,1151d1133
+< ads_setup
+< ads_engagement_launch
+< ads_engagement_available
+< ads_engagement_active
+< ads_get_display_height
+< ads_get_display_width
+< ads_move
+< ads_interstitial_available
+< ads_interstitial_display
+< ads_enable
+< ads_disable
+< ads_event
+< ads_event_preload
+1155d1136
+< ads_set_reward_callback
+2168a2150
+> event_perform_async
+2301a2284,2297
+> fx_create
+> fx_get_name
+> fx_get_parameter_names
+> fx_get_parameter
+> fx_get_parameters
+> fx_get_single_layer
+> fx_set_parameter
+> fx_set_parameters
+> fx_set_single_layer
+> layer_set_fx
+> layer_get_fx
+> layer_clear_fx
+> layer_enable_fx
+> layer_fx_is_enabled

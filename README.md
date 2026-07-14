@@ -14,15 +14,17 @@ existing and missing functions for Linux and Windows runners of various versions
 |-----|----|-----------|-------------------------|-----------------------------|
 | 14 | 1.4.1567 | UT 1.00 | [functions-wad14-gm1.4.1567.txt](output/functions-wad14-gm1.4.1567.txt) | [output/missingfunctions-wad14-gm1.4.1567.txt](output/missingfunctions-wad14-gm1.4.1567) |
 | 15 | 1.4.1690 | UT 1.001 | [functions-wad15-gm1.4.1690.txt](output/functions-wad15-gm1.4.1690.txt) | [output/missingfunctions-wad15-gm1.4.1690.txt](output/missingfunctions-wad15-gm1.4.1690.txt) |
-| 16 | 1.4.1539 | UT 1.06 - 1.08 | [functions-wad16-gm1.4.1539.txt](output/functions-wad16-gm1.4.1539.txt) | [output/missingfunctions-wad16-gm1.4.1539.txt](output/missingfunctions-wad16-gm1.4.1539.txt) |
-| 16 | 2.0.6 | UT 1.09 - 1.11 | [functions-wad16-gm2.0.6.txt](output/functions-wad16-gm2.0.6.txt) | [missingfunctions-wad16-gm2.0.6.txt](output/missingfunctions-wad16-gm2.0.6.txt)
-| 17 | 2.3.2 | DR Demo 1.00 - 1.07 | stub | stub |
+| 16 | 1.4.1539 | UT 1.06 - 1.08 | [functions-wad16-gm1.4.1539.txt](output/functions-wad16-gm1.4.1539.txt) | [missingfunctions-wad16-gm1.4.1539.txt](output/missingfunctions-wad16-gm1.4.1539.txt) |
+| 16 | 2.0.6 | UT 1.09 - 1.11 | [functions-wad16-gm2.0.6.txt](functions-wad16-gm2.0.6.txt) | [missingfunctions-wad16-gm2.0.6.txt](output/missingfunctions-wad16-gm2.0.6.txt)
+| 17 | 2.3.2 | DR Demo 1.00 - 1.07 | [functions-wad17-gm2.3.2.txt](output/functions-wad17-2.3.2.txt) | [missingfunctions-wad17-2.3.2.txt](output/missingfunctions-wad17-gm2.3.2.txt) |
 | 17 | 2022.1 | DR Demo 1.08 - 1.10 | [functions-wad17-gm2022.1.txt](output/functions-wad17-gm2022.1.txt) | [missingfunctions-wad17-gm2022.1.txt](output/missingfunctions-wad17-gm2022.1.txt) |
 
 - **WAD** refers to the bytecode/WAD Version field (one byte) in the `GEN8` chunk of the data file (General Info).
 - **GM** refers to the IDE Version field (16 bytes) in the `GEN8` chunk. GMS1 versions are stored as `1.0.0.MINOR`, so `1.4.1567` becomes `1.0.0.1567` in GEN8.
 - **Game** refers to the Undertale or Deltarune Version (range) that uses this GameMaker version.
 The ranges are inclusive on both sides.
+
+Diffs are available in the [`diffs` directory](diffs/).
 
 ## Running yourself
 If you want, you can run this scuffed tool yourself.

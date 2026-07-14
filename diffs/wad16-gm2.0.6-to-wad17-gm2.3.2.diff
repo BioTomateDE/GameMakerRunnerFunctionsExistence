@@ -1,0 +1,588 @@
+2a3,6
+> @@Global@@
+> @@GetInstance@@
+> @@NullObject@@
+> @@NewGMLObject@@
+3a8
+> @@CopyStatic@@
+25,160c30
+< action_path_old
+< action_set_sprite
+< action_draw_font
+< action_draw_font_old
+< action_fill_color
+< action_fill_colour
+< action_line_color
+< action_line_colour
+< action_highscore
+< action_set_relative
+< action_move
+< action_set_motion
+< action_set_hspeed
+< action_set_vspeed
+< action_set_gravity
+< action_set_friction
+< action_move_point
+< action_move_to
+< action_move_start
+< action_move_random
+< action_snap
+< action_wrap
+< action_reverse_xdir
+< action_reverse_ydir
+< action_move_contact
+< action_bounce
+< action_path
+< action_path_end
+< action_path_position
+< action_path_speed
+< action_linear_step
+< action_potential_step
+< action_kill_object
+< action_create_object
+< action_create_object_motion
+< action_create_object_random
+< action_change_object
+< action_kill_position
+< action_sprite_set
+< action_sprite_transform
+< action_sprite_color
+< action_sprite_colour
+< action_sound
+< action_end_sound
+< action_if_sound
+< action_another_room
+< action_current_room
+< action_previous_room
+< action_next_room
+< action_if_previous_room
+< action_if_next_room
+< action_set_alarm
+< action_sleep
+< action_set_timeline
+< action_timeline_set
+< action_timeline_start
+< action_timeline_stop
+< action_timeline_pause
+< action_set_timeline_position
+< action_set_timeline_speed
+< action_message
+< action_show_info
+< action_show_video
+< action_end_game
+< action_restart_game
+< action_save_game
+< action_load_game
+< action_replace_sprite
+< action_replace_sound
+< action_replace_background
+< action_if_empty
+< action_if_collision
+< action_if
+< action_if_number
+< action_if_object
+< action_if_question
+< action_if_dice
+< action_if_mouse
+< action_if_aligned
+< action_execute_script
+< action_inherited
+< action_if_variable
+< action_draw_variable
+< action_set_score
+< action_if_score
+< action_draw_score
+< action_highscore_show
+< action_highscore_clear
+< action_set_life
+< action_if_life
+< action_draw_life
+< action_draw_life_images
+< action_set_health
+< action_if_health
+< action_draw_health
+< action_set_caption
+< action_partsyst_create
+< action_partsyst_destroy
+< action_partsyst_clear
+< action_parttype_create_old
+< action_parttype_create
+< action_parttype_color
+< action_parttype_colour
+< action_parttype_life
+< action_parttype_speed
+< action_parttype_gravity
+< action_parttype_secondary
+< action_partemit_create
+< action_partemit_destroy
+< action_partemit_burst
+< action_partemit_stream
+< action_cd_play
+< action_cd_stop
+< action_cd_pause
+< action_cd_resume
+< action_cd_present
+< action_cd_playing
+< action_set_cursor
+< action_webpage
+< action_draw_sprite
+< action_draw_background
+< action_draw_text
+< action_draw_text_transformed
+< action_draw_rectangle
+< action_draw_gradient_hor
+< action_draw_gradient_vert
+< action_draw_ellipse
+< action_draw_ellipse_gradient
+< action_draw_line
+< action_draw_arrow
+< action_color
+< action_colour
+< action_font
+< action_fullscreen
+< action_snapshot
+< action_effect
+---
+> d3d_set_fog
+312,322d181
+< file_open_read
+< file_open_write
+< file_open_append
+< file_close
+< file_read_string
+< file_read_real
+< file_readln
+< file_eof
+< file_write_string
+< file_write_real
+< file_writeln
+369d227
+< move_contact
+374d231
+< move_bounce
+415d271
+< collision_shape
+437d292
+< instance_sprite
+446d300
+< instance_deactivate_region_special
+476,478d329
+< display_get_windows_vertex_buffer_method
+< display_get_windows_alternate_sync
+< display_set_windows_vertex_buffer_method
+526d376
+< make_color
+536d385
+< make_colour
+546,552d394
+< draw_set_blend_mode_ext
+< draw_set_color_write_enable
+< draw_set_colour_write_enable
+< draw_set_alpha_test
+< draw_set_alpha_test_ref_value
+< draw_get_alpha_test
+< draw_get_alpha_test_ref_value
+597,598d438
+< background_get_uvs
+< background_get_texture
+600,603d439
+< texture_set_interpolation_ext
+< texture_set_blending
+< texture_set_repeat
+< texture_set_repeat_ext
+607d442
+< texture_exists
+611a447,454
+> texture_prefetch
+> texture_flush
+> texture_debug_messages
+> texture_is_ready
+> texturegroup_get_textures
+> texturegroup_get_sprites
+> texturegroup_get_fonts
+> texturegroup_get_tilesets
+638,639d480
+< draw_shape
+< draw_shape_string
+651,652d491
+< draw_background_stretched_ext
+< draw_background_part
+654,655d492
+< draw_background_general
+< draw_background_tiled
+657,676d493
+< tile_get_x
+< tile_get_y
+< tile_get_left
+< tile_get_top
+< tile_get_width
+< tile_get_height
+< tile_get_depth
+< tile_get_visible
+< tile_get_xscale
+< tile_get_yscale
+< tile_get_blend
+< tile_get_alpha
+< tile_get_background
+< tile_set_visible
+< tile_set_background
+< tile_set_region
+< tile_set_position
+< tile_set_depth
+< tile_set_scale
+< tile_set_blend
+678,681d494
+< tile_add
+< tile_get_count
+< tile_get_id
+< tile_get_ids
+683,687d495
+< tile_exists
+< tile_delete
+< tile_layer_hide
+< tile_layer_show
+< tile_layer_delete
+689,691d496
+< tile_layer_find
+< tile_layer_delete_at
+< tile_layer_depth
+694d498
+< surface_create_special
+747d550
+< get_color
+772,779d574
+< joystick_exists
+< joystick_direction
+< joystick_buttons
+< joystick_has_pov
+< joystick_check_button
+< joystick_xpos
+< joystick_ypos
+< joystick_pov
+784,787d578
+< gpio_set
+< gpio_clear
+< gpio_get
+< gpio_set_mode
+820a612,616
+> is_numeric
+> is_nan
+> is_infinity
+> is_struct
+> is_method
+834a631,642
+> array_length
+> array_resize
+> array_push
+> array_pop
+> array_insert
+> array_delete
+> array_sort
+> method
+> method_get_self
+> method_get_index
+> instanceof
+> exception_unhandled_handler
+842a651,659
+> variable_instance_names_count
+> variable_struct_exists
+> variable_struct_get
+> variable_struct_set
+> variable_struct_get_names
+> variable_struct_names_count
+> variable_struct_remove
+> json_stringify
+> json_parse
+851d667
+< random_use_old_version
+884,885d699
+< min3
+< max3
+928a743,745
+> string_pos_ext
+> string_last_pos
+> string_last_pos_ext
+941,958d757
+< external_define0
+< external_call0
+< external_define1
+< external_call1
+< external_define2
+< external_call2
+< external_define3
+< external_call3
+< external_define4
+< external_call4
+< external_define5
+< external_call5
+< external_define6
+< external_call6
+< external_define7
+< external_call7
+< external_define8
+< external_call8
+1036d834
+< part_type_color
+1043d840
+< part_type_colour
+1047d843
+< part_type_alpha
+1085,1087d880
+< sprite_get_transparent
+< sprite_get_smooth
+< sprite_get_preload
+1095d887
+< sprite_get_precise
+1101d892
+< sprite_set_precise
+1123,1125d913
+< background_name
+< background_exists
+< background_get_name
+1128,1153d915
+< background_get_transparent
+< background_get_smooth
+< background_get_preload
+< background_set_alpha_from_background
+< background_create_from_surface
+< background_create_color
+< background_create_colour
+< background_create_gradient
+< background_add
+< background_replace
+< background_delete
+< background_duplicate
+< background_assign
+< background_save
+< background_prefetch
+< background_prefetch_multi
+< background_flush
+< background_flush_multi
+< sound_name
+< sound_exists
+< sound_get_name
+< sound_get_kind
+< sound_get_preload
+< sound_discard
+< sound_restore
+< sound_delete
+1247d1008
+< audio_delete
+1257,1258d1017
+< font_set_dynamic_texture_size
+< font_get_dynamic_texture_size
+1274d1032
+< path_get_time
+1331,1332d1088
+< object_set_collisions
+< room_name
+1340d1095
+< room_set_background
+1351,1353d1105
+< room_tile_add
+< room_tile_add_ext
+< room_tile_clear
+1356,1363d1107
+< sound_play
+< sound_loop
+< sound_stop
+< sound_stop_all
+< sound_isplaying
+< sound_volume
+< sound_fade
+< sound_global_volume
+1428d1171
+< gpu_set_alphatestfunc
+1466d1208
+< gpu_get_alphatestfunc
+1527d1268
+< iap_is_purchased
+1532,1551d1272
+< iap_store_status
+< iap_product_status
+< iap_is_downloaded
+< iap_event_queue
+< iap_files_purchased
+< iap_product_files
+< facebook_init
+< facebook_login
+< facebook_status
+< facebook_graph_request
+< facebook_dialog
+< facebook_logout
+< facebook_launch_offerwall
+< facebook_post_message
+< facebook_send_invite
+< facebook_user_id
+< facebook_accesstoken
+< facebook_check_permission
+< facebook_request_read_permissions
+< facebook_request_publish_permissions
+1570d1290
+< YoYo_OSPauseEvent
+1808d1527
+< steam_publish_workshop_file
+1960,1962d1678
+< yyg_player_run
+< yyg_player_restarted
+< yyg_player_launch_args
+1966a1683
+> ps4_gamepad_reset_colour
+1989c1706
+< psn_check_free_space
+---
+> psn_init_leaderboard
+2025,2026d1741
+< psn_net_check
+< psn_setup_trophies
+2385a2101,2102
+> switch_controller_support_set_identification_colour
+> switch_controller_support_set_identification_color
+2449a2167,2179
+> scheduler_resolution_set
+> scheduler_resolution_get
+> gif_open
+> gif_add_surface
+> gif_save
+> gif_save_buffer
+> draw_get_font
+> draw_get_halign
+> draw_get_valign
+> font_get_info
+> font_cache_glyph
+> surface_get_target
+> surface_get_target_ext
+2452c2182,2310
+< window_get_showborder
+\ No newline at end of file
+---
+> window_get_showborder
+> audio_system_is_available
+> audio_sound_is_playable
+> sprite_get_info
+> sprite_get_nineslice
+> sprite_set_nineslice
+> sprite_nineslice_create
+> script_execute_ext
+> ds_list_is_map
+> ds_list_is_list
+> ds_map_values_to_array
+> ds_map_keys_to_array
+> ds_map_is_map
+> ds_map_is_list
+> gamepad_hat_count
+> gamepad_hat_value
+> gamepad_remove_mapping
+> gamepad_test_mapping
+> gamepad_get_mapping
+> gamepad_get_guid
+> gamepad_set_option
+> gamepad_get_option
+> http_get_request_crossorigin
+> http_set_request_crossorigin
+> uwp_livetile_tile_clear
+> uwp_livetile_badge_notification
+> uwp_livetile_badge_clear
+> uwp_livetile_queue_enable
+> uwp_secondarytile_pin
+> uwp_secondarytile_badge_notification
+> uwp_secondarytile_delete
+> uwp_secondarytile_badge_clear
+> uwp_secondarytile_tile_clear
+> uwp_livetile_notification_begin
+> uwp_livetile_notification_secondary_begin
+> uwp_livetile_notification_expiry
+> uwp_livetile_notification_tag
+> uwp_livetile_notification_text_add
+> uwp_livetile_notification_image_add
+> uwp_livetile_notification_end
+> uwp_livetile_notification_template_add
+> uwp_appbar_enable
+> uwp_appbar_add_element
+> uwp_appbar_remove_element
+> uwp_device_touchscreen_available
+> network_connect_async
+> network_connect_raw_async
+> buffer_set_used_size
+> buffer_crc32
+> push_get_application_badge_number
+> push_set_application_badge_number
+> skeleton_attachment_create_colour
+> skeleton_attachment_create_color
+> skeleton_slot_colour_set
+> skeleton_slot_color_set
+> skeleton_slot_colour_get
+> skeleton_slot_color_get
+> skeleton_slot_alpha_get
+> skeleton_find_slot
+> skeleton_animation_get_event_frames
+> draw_enable_skeleton_blendmodes
+> draw_get_enable_skeleton_blendmodes
+> skeleton_bone_list
+> skeleton_slot_list
+> skeleton_slot_data_instance
+> tileset_get_texture
+> tileset_get_uvs
+> tileset_get_name
+> tag_get_asset_ids
+> tag_get_assets
+> asset_get_tags
+> asset_add_tags
+> asset_remove_tags
+> asset_has_tags
+> asset_has_any_tag
+> asset_clear_tags
+> layer_sequence_get_instance
+> layer_sequence_create
+> layer_sequence_destroy
+> layer_sequence_exists
+> layer_sequence_x
+> layer_sequence_y
+> layer_sequence_angle
+> layer_sequence_xscale
+> layer_sequence_yscale
+> layer_sequence_headpos
+> layer_sequence_headdir
+> layer_sequence_pause
+> layer_sequence_play
+> layer_sequence_speedscale
+> layer_sequence_get_x
+> layer_sequence_get_y
+> layer_sequence_get_angle
+> layer_sequence_get_xscale
+> layer_sequence_get_yscale
+> layer_sequence_get_headpos
+> layer_sequence_get_headdir
+> layer_sequence_get_sequence
+> layer_sequence_is_paused
+> layer_sequence_is_finished
+> layer_sequence_get_speedscale
+> layer_sequence_get_length
+> animcurve_get
+> animcurve_get_channel
+> animcurve_get_channel_index
+> animcurve_channel_evaluate
+> sequence_create
+> sequence_destroy
+> sequence_exists
+> sequence_get
+> sequence_keyframe_new
+> sequence_keyframedata_new
+> sequence_track_new
+> sequence_get_objects
+> sequence_instance_override_object
+> animcurve_create
+> animcurve_destroy
+> animcurve_exists
+> animcurve_channel_new
+> animcurve_point_new
+> gc_collect
+> gc_enable
+> gc_is_enabled
+> gc_get_stats
+> gc_target_frame_time
+> gc_get_target_frame_time
+> weak_ref_create
+> weak_ref_alive
+> weak_ref_any_alive
+\ No newline at end of file
