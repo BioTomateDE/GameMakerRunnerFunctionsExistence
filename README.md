@@ -38,9 +38,9 @@ for each Undertale version and maps them to in-game versions.
 
 ## How it works
 
-1. Load original Undertale data file
-2. Create new functions (known from `BuiltinList.cs`) by creating new entries in the `FUNC` chunk.
-3. Write the modified data file
+1. Create a new empty data file
+2. Add functions (known from `BuiltinList.cs`) by creating new entries in the `FUNC` chunk.
+3. Write the data file
 4. Execute the runner
 5. If it fails, extract the error message from stdout
   It will be something like:
@@ -49,7 +49,6 @@ for each Undertale version and maps them to in-game versions.
   ERROR!!! :: Error on load
   Unable to find function @@Other@@
   ```
-
 6. Remove that function from the data file
 7. Repeat from Step 3
 
